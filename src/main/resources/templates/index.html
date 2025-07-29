@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="ISO-8859-1">
     <title>Login at Jobs</title>
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" type="text/css"/>
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/styles.css}" type="text/css"/>
+
 </head>
 <body class="background">
 <nav class="main_div">
@@ -42,7 +43,7 @@
 
             <input type="text" placeholder="Search for a job" name="job" th:value="${job}"/>
             <input type="text" placeholder="Enter a location" name="location" th:value="${location}"/>
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button type="submit"> <i class="fa fa-search"> Search </i> </button>
 
         </div>
     </div>
